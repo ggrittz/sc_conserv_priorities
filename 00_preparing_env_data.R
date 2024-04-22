@@ -25,7 +25,6 @@ for (i in 1:length(inf)) {
                          }
 
 ##### Principal component analysis of environmental data #####
-#Do the same for output/ and output_enfa/
 vars <- list.files("output/", pattern = "tif$", full.name = TRUE)
 vars <- rast(vars)
 
