@@ -68,8 +68,7 @@ common$ua <- paste("ua_",common$ua, sep ="")
 rare$ua <- paste("ua_",rare$ua, sep ="")
 
 #Reading environmental data for extracting values at each survey site
-#Do the same for enfa
-env <- readRDS('rds/predictors_raster_enfa.rds')
+env <- readRDS('rds/predictors_raster.rds')
 
 #Transforming the data.frame to vector (points) to extract correctly
 common <- vect(common, geom = c("x", "y"))
@@ -78,11 +77,11 @@ rare <- vect(rare, geom = c("x", "y"))
 #Extracting and saving
 common <- terra::extract(x = env, y = common, bind = TRUE, na.rm = TRUE)
 crs(common) <- "epsg:4326"
-#saveRDS(common, 'rds/pa_common_enfa.rds')
+#saveRDS(common, 'rds/pa_common.rds')
 
 rare <- terra::extract(x = env, y = rare, bind = TRUE, na.rm = TRUE)
 crs(rare) <- "epsg:4326"
-#saveRDS(rare, 'rds/pa_rare_enfa.rds')
+#saveRDS(rare, 'rds/pa_rare.rds')
 
 
 rm(list=ls())
