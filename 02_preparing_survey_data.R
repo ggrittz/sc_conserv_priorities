@@ -5,6 +5,11 @@
 ################################
 
 #Things are being done simultaneously for ENFA and SDM. Be careful!
+#We did not proceed with ENFA analyses but the filenames were kept with ENFA names 
+#for laziness sorry [22/04/2024].
+
+#At the time of these analyses I wasn't so into GitHub so I didn't even use a version control,
+#But everywhere is working as intended!
 
 #Field data 1st survey coordinates for each site
 coords <- read_xlsx('data/tables/UAs_IFFSC.xlsx', sheet = 1, skip = 1)
