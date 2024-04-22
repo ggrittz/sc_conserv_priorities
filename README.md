@@ -21,7 +21,13 @@ Codes are structured as follows:
 5. **Ensemble of Small Models**: all modeling related to rare species was performed within the script ```esm.R```;
 6. **Zonation**: script ```zonation_analyses.R``` was used to prepare the data in the right format for the Zonation app and to analyze a bit the geospatial distribution of our data.
 
+<br />
 
+### How to cite
+
+Please cite this GitHub as:
+
+> **{{ ADD CITATION LATER }}**
 
 
 >Valavi, R., G. Guillera-Arroita, J. J. Lahoz-Monfort, and J. Elith. 2021. Predictive performance of presence-only species distribution models: a benchmark study with reproducible code. Ecological Monographs >00(00):e01486. 10.1002/ecm.1486
