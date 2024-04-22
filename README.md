@@ -9,8 +9,12 @@
 
 <!-- badges: end -->
 
+<br />
+
 ### Summary
 This repository contains all the codes needed to replicate the analyses of the aforementioned paper. At the moment, data can only be made available upon reasonable request. Most modeling codes, which bear the prefix ```number_modeling_```roughly follow [Valavi et al. (2021)](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.1486), with modifications. It must be noted that some ```.rds``` filenames that may appear throughout the codes have **enfa** in their names. We did not proceed with enfa analyses but left that name there to avoid rewriting some parts of the codes. All codes work just fine and we commented pretty much everything, so replication should not be a problem (but if a issue is found, [please contact me](mailto:ggrittz@usp.br)).
+
+<br />
 
 ### Workflow
 Codes are structured as follows:  
@@ -29,5 +33,7 @@ Please cite this GitHub as:
 
 > **{{ ADD CITATION LATER }}**
 
+<br />
 
+### References
 >Valavi, R., G. Guillera-Arroita, J. J. Lahoz-Monfort, and J. Elith. 2021. Predictive performance of presence-only species distribution models: a benchmark study with reproducible code. Ecological Monographs >00(00):e01486. 10.1002/ecm.1486
