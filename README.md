@@ -1,5 +1,5 @@
 ## Repository for Commonness as a reliable surrogacy strategy for the conservation planning of rare tree species in the subtropical Atlantic Forest
-[ADD DOI LATER]
+
 
 <!-- badges: start -->
 
@@ -31,7 +31,7 @@ Codes are structured as follows:
 
 Please cite this GitHub as:
 
-> **{{ ADD CITATION LATER }}**
+> Grittz, G.S., Machado, G.M.O., Vibrans, A.C., Gasper, A.L. Commonness as a reliable surrogacy strategy for the conservation planning of rare tree species in the subtropical Atlantic Forest. Biodivers Conserv (2024). https://doi.org/10.1007/s10531-024-02849-2
 
 <br />
 
