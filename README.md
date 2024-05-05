@@ -12,13 +12,13 @@
 <br />
 
 ### Summary
-This repository contains all the codes needed to replicate the analyses of the aforementioned paper. At the moment, data can only be made available upon reasonable request. Most modeling codes, which bear the prefix ```modeling_```roughly follow [Valavi et al. (2021)](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.1486), with modifications. It must be noted that some ```.rds``` filenames that may appear throughout the codes have **enfa** in their names. We did not proceed with enfa analyses but left that name there to avoid rewriting some parts of the codes. All codes work just fine and we commented pretty much everything, so replication should not be a problem (but if a issue is found, [please contact me](mailto:ggrittz@usp.br)).
+This repository contains all the codes needed to replicate the analyses of the paper mentioned above. Right now, data can only be made available upon reasonable request. Most modeling codes, which bear the prefix ```modeling_```roughly follow [Valavi et al. (2021)](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecm.1486), with modifications. It must be noted that some ```.rds``` filenames that may appear throughout the codes have **enfa** in their names. We did not proceed with enfa analyses but left that name there to avoid rewriting some parts of the codes. All codes work just fine and we commented on pretty much everything, so replication should not be a problem (but if an issue is found, [don't hesitate to get in touch with me](mailto:ggrittz@usp.br)).
 
 <br />
 
 ### Workflow
 Codes are structured as follows:  
-1. **Preparing data**: scripts ```preparing_survey_data.R``` is used to produce site-by-species matrices for both common and rare species, as defined in the paper. ```preparing_env_data.R``` is used for geospatial analyses (crop and mask the study region etc.) and preparing all environmental variables through PCA analyses; <br /> <br />
+1. **Preparing data**: scripts ```preparing_survey_data.R``` is used to produce site-by-species matrices for common and rare species, as defined in the paper. ```preparing_env_data.R``` is used for geospatial analyses (crop and mask the study region etc.) and preparing all environmental variables through PCA analyses; <br /> <br />
 2. **Loading data**: script ```loading_data.R``` is sourced to load everything that is needed for each modeling approach, that is, surveys, environmental variables, and a ```data.frame``` to save the results; <br /> <br />
 3. **Modeling common species**: scripts ending with one of the following suffixes were used to model common species: ```rf```, ```brt```, ```gam```, ```glm```, ```mars```, ```bart```, ```svm```, or ```xgboost```; <br /> <br />
 4. **Preparing matrices for Zonation and modeling performance** ```stack_and_performance.R``` is used to create stacked species distribution models (we did not use them but this part is available anyway), save each species distribution model as a matrix for later use in Zonation and evaluate each model performance through observed x predicted plots; <br /> <br />
